@@ -1,0 +1,94 @@
+:root {
+    --main-color: crimson;
+    --body-bg: linear-gradient(to right, #181616, #2b2828);
+    --box-bg: #221f1f;
+    --txt-color: #FFF;
+
+    --nav-height: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--body-bg);
+    color: var(--txt-color);
+    padding-top: var(--nav-height);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+.nav-wrapper {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #111;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--txt-color);
+    height: var(--nav-height);
+}
+
+.nav a {
+    color: var(--txt-color);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-menu li ~ li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-transform: uppercase;
+    font-weight: 600;
+}
