@@ -285,6 +285,73 @@ a.logo:hover {
     margin-top: var(--space-top);
 }
 
+.carousel-nav-center {
+  position: relative;
+}
+
+.carousel-nav-center .owl-nav button i{
+  font-size: 2.8rem;
+}
+
+.carousel-nav-center .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-nav-center .owl-nav .owl-prev {
+  position: absolute;
+  left: 5px;
+}
+
+.carousel-nav-center .owl-nav .owl-next {
+  position: absolute;
+  right: 5px;
+}
+
+.owl-nav button {
+  border: none;
+  outline: none;
+}
+
+.owl-nav button i{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.owl-nav button:hover i {
+  color: var(--main-color);
+}
+
+.top-down {
+  transform: translateY(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+
+.delay-2 {
+  transition-delay: .2s;
+}
+
+.delay-4 {
+  transition-delay: .4s;
+}
+
+.delay-6 {
+  transition-delay: .6s;
+}
+
+.delay-8 {
+  transition-delay: .8s;
+}
+
+.owl-item .active .top-down {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
 /*Resposivity*/
 @media only screen and (max-width: 850px) {
     html {
